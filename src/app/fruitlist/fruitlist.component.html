@@ -39,9 +39,9 @@
                         }
 
                         
+                        <!-- <p [ngStyle]="{'color': fruit.stars > 4 ? fontColorGood : fontColorBad, 'background-color': 'white'}">({{fruit.stars}})</p> -->
                         
-                        
-                        <p>({{fruit.stars}})</p>
+                        <p [ngClass]="{'fontColorBad': fruit.stars < 3, 'fontColorGood': fruit.stars >= 3, 'bgWhite': true}">({{fruit.stars}})</p>
                     </div>
                 </div>
                 <div><b>Art:</b><br>{{fruit.genus}}</div>
