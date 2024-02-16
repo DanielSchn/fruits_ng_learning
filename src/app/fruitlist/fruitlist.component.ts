@@ -65,4 +65,8 @@ export class FruitlistComponent {
     },
   ]
 
+  numLog(index: number) {
+    console.log(index);
+  }
+
 }
